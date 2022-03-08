@@ -17,6 +17,10 @@ const playwright = require('playwright');
 
     //navigate to page
     await page.goto("https://the-internet.herokuapp.com/abtest")
+    //screenshot
+    await page.screenshot({path: `ea-${Date.now}.png`})
+    //close
+    await browser.close();
 
 
 
